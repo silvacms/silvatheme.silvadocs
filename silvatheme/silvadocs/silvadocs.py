@@ -1,15 +1,19 @@
-from zope.cachedescriptors.property import CachedProperty
+# -*- coding: utf-8 -*-
+# Copyright (c) 2012  Infrae. All rights reserved.
+# See also LICENSE.txt
+
+from zope.traversing.browser import absoluteURL
+from zope.cachedescriptors.property import Lazy
 from silva.core.layout.interfaces import ISilvaSkin
 from silva.core import conf as silvaconf
 from silva.core.layout.porto import porto
 from silva.core.layout.porto.interfaces import IPorto
-from silva.core.interfaces import IPublication
+from silva.core.interfaces import IPublication, ISilvaObject
 
 
 class ISilvaDocs(IPorto):
     """Layer for silva docs theme
     """
-
     silvaconf.resource('html5reset.css')
     silvaconf.resource('modernizr-1.7.min.js')
     silvaconf.resource('typography.css')
@@ -31,13 +35,20 @@ class Navigation(porto.Navigation):
 
 class Layout(porto.Layout):
 
-    @CachedProperty
+    @Lazy
     def publication_title(self):
         return self.context.get_publication().get_title()
 
-    @CachedProperty
+    @Lazy
     def publication_url(self):
         return self.context.get_publication().absolute_url()
+    @Lazy
+    def search_url(self):
+        search = getattr(self.context, 'search', None)
+        if ISilvaObject.providedBy(search):
+            # get_silva_object cleanup the Acquisition path
+            return absoluteURL(search.get_silva_object(), self.request)
+        return None
 
     def top_menu_items(self):
         root = self.context.get_root()
