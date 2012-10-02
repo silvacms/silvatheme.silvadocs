@@ -6,9 +6,13 @@ Released for free under a Creative Commons Attribution 2.5 License
 
 @media screen {
 
+html {
+  background: #333
+}
+
 body {
   background: #FCFCFC;
-  border-top: 3px solid #59A80F;
+  border-top: 3px solid #00A200;
   color: #333;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100%;
@@ -19,40 +23,41 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0.5em 0;
   font-weight: normal;
   color: #3E3E3E;
-  line-height:1.2;
+  line-height: 1.1;
 }
 
 h1 {
-  font-size: 1.8em;
+  border-bottom: 1px solid #1A8922;
+  font-size: 1.5em;
   margin-bottom: 5px;
 }
 
 h2 {
-  border-bottom: 1px solid #1A8922;
   font-size: 1.5em;
-  line-height: 1;
 }
 
-h3, h4, h5 {
+h3, h4, h5, h6 {
   border-bottom: 1px solid #1A8922;
   display: inline-block;
-  line-height: 1;
+  font-size: 1.1em;
+}
+
+ul, ol, p, td, dd, dt {
+  font-size: 0.85em;
 }
 
 ul, ol {
   margin: 0 0 0.5em;
-  font-size: 0.8em;
   list-style: none;
 }
 
 p {
-  font-size: 0.8em;
   margin: 0 0 0.5em;
   text-align: justify; 
 }
 
 ::-selection {background: #BFEB88;}
-::-moz-selection {background: #BFEB88;}
+::-moz-selection {background: #00A200; color: #EEE;}
 
 a:link {
   color: #FF9900;
@@ -158,7 +163,7 @@ img.right {
 
 #page {
   width: 74%;
-  margin: 0 auto 35px;
+  margin: 0 auto 60px;
 }
 #content ul {
   list-style: disc inside;
@@ -246,6 +251,7 @@ img.right {
 }
 
 #sidebar h2 { 
+  border-bottom: 1px solid #1A8922;
   display: inline-block;
   margin-bottom: 12px;
   font-size: 1.1em;
@@ -323,17 +329,19 @@ img.right {
 
 #x {
   padding: 3px;
-  background: #ECECEC url(images/img08.gif) repeat-x left bottom;
   border: none;
   font-size: 11px;
   color: #4F4F4F;
+}
+
+.searchform td {
+  vertical-align: middle;
 }
 
 /* Boxes */
 
 .box1 {
   padding: 20px;
-  background: url(images/img05.gif) no-repeat;
 }
 
 .box2 {
@@ -342,7 +350,6 @@ img.right {
 
 .box2 h2 {
   margin-bottom: 15px;
-  background: url(images/img10.gif) repeat-x left bottom;
   font-size: 16px;
   color: #FFFFFF;
 }
@@ -357,12 +364,16 @@ img.right {
   color: #EDEDED;
 }
 
+p.annotation {
+  font-size: 0.75em;
+}
+
 /* Footer */
 
 #footer {
   /* min-height: 400px; */
-  padding: 40px 0 0 0;
-  background: #59A80F url(images/img09.gif) repeat-x;
+  background: #333;
+  padding: 25px 0 0 0;
 }
 
 /*html>body #footer {
