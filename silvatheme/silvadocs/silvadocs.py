@@ -10,6 +10,9 @@ class ISilvaDocs(IPorto):
     """Layer for silva docs theme
     """
 
+    silvaconf.resource('html5reset.css')
+    silvaconf.resource('modernizr-1.7.min.js')
+    silvaconf.resource('typography.css')
     silvaconf.resource('default.css')
 
 
