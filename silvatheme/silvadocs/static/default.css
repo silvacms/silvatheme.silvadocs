@@ -6,13 +6,19 @@ Released for free under a Creative Commons Attribution 2.5 License
 
 @media screen {
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 html {
-  background: #333
+  background: #59A80F;
 }
 
 body {
   background: #FCFCFC;
-  border-top: 3px solid #00A200;
+  border-top: 3px solid #59A80F;
   color: #333;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100%;
@@ -56,8 +62,8 @@ p {
   text-align: justify; 
 }
 
-::-selection {background: #BFEB88;}
-::-moz-selection {background: #00A200; color: #EEE;}
+::-selection {background: #777; color:#FFF;}
+::-moz-selection {background: #777; color:#FFF;}
 
 a:link {
   color: #FF9900;
@@ -75,6 +81,10 @@ a:hover, a:active {
 img {
   border: none;
   max-width: 100%;
+}
+
+div.image {
+  width: 100%;
 }
 
 img.left {
@@ -159,22 +169,20 @@ img.right {
 
 #site {
   background-color: #FCFCFC;
+  height: auto !important;
+  min-height: 100%;
+  height: 100%;
+  position: relative; /* Required to absolutely position the footer */
 }
 
 #page {
   width: 74%;
-  margin: 0 auto 60px;
-}
-#content ul {
-  list-style: disc inside;
-}
-#content .entry ul li a {
-  color: #333;
+  margin: 0 auto 35px;
+  padding-bottom: 60px; /* This should match the height of the footer */
 }
 
-#content .entry ul li a:hover, #content .entry ul li a:focus {
-  color: #000;
-  text-decoration: underline;
+#content ul {
+  list-style: disc inside;
 }
 
 /* Content */
@@ -365,32 +373,30 @@ img.right {
 }
 
 p.annotation {
+  clear: both;
   font-size: 0.75em;
+  margin-bottom: 20px;
 }
 
 /* Footer */
 
 #footer {
-  /* min-height: 400px; */
-  background: #333;
-  padding: 25px 0 0 0;
+  background: #59A80F;
+  height: 60px; /* Define height of the footer */
+  position: absolute; bottom: 0; left: 0;
+  width: 100%; 
 }
 
-/*html>body #footer {
-  height: auto;
-}
-*/
 #footer .wrap {
-/*  width: 850px;*/
   margin: 0 auto;
 }
 
 #legal {
   clear: both;
-  padding-bottom: 10px;
-  text-align: center;
   color: #EEE;
   font-size:13px;
+  margin-top: 15px;
+  text-align: center;
 }
 
 #legal a {
@@ -529,9 +535,128 @@ div.form-actions input.cancel {
 
 /* Style is reflection */
 
-/* style for print */ 
+/* stylesheet for silva find search and searchresult pages */
+
+.searchform input, .searchform select, .searchform textarea {
+  width: 94%;
+}
+
+*:first-child+html .searchform input, *:first-child+html .searchform select, *:first-child+html .searchform textarea {
+  width: 99%; /* IE7 hack */
+}
+
+div.searchform input.searchform-submit {
+  width:auto;
+}
+
+.searchform-title {
+  width: 20%;
+  padding-top:0.25em;
+  padding-right:0.3em;
+}
+
+.searchform-title:after {
+  content:':';
+}
+
+.searchform-description {
+  width: 35%;
+  padding-top:0.25em;
+  padding-left:0.5em;
+}
+
+.searchresult-header {
+  margin: 0.5em 0;
+  padding:0 0.3em;
+  border:1px solid #898a8b;
+}
+
+.searchresult-header span {
+  font-size:11px;
+}
+
+div.searchresult-header a:link {
+  text-decoration:none;
+}
+div.searchresult-header a:visited {
+  text-decoration:none;
+}
+div.searchresult-header a:hover {
+  text-decoration:underline;
+}
+
+body div#content div.searchresults ul li {
+  list-style-type:none;
+  margin:0.5em 0.5em 1.5em 0;
+}
+
+div.searchresult {
+  margin-top:1em;
+}
+
+.searchresult-ranking {
+  float:right;
+  font-size:0.95em;
+}
+
+.searchresults .batchNav a {
+  font-size: 85%;
+}
+
+.searchresult-link {
+  font-weight:bold;
+}
+.searchresult-date:before {
+  content:'(';
+}
+.searchresult-date{
+  font-size:0.85em;  
+}
+.searchresult-date:after {
+  content:')';
+}
+.searchresult-field {
+  display:block;
+  margin-left:2em;
+  padding-left:10em;
+  border-bottom:1px solid #898a8b;
+}
+.searchresult-field-title {
+  float:left;
+  margin-left:-10em;
+  font-style:italic;
+}
+
+.searchresult-snippet{
+  margin-left:2em;
+}
+
+.searchresult-notallowed {
+  color:red;
+}
+
+.searchresult-thumbnail {
+  margin-left:2em;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+}
+
+.searchresult-breadcrumb { 
+   margin-left:2em;
+   display:block;
+}
+
+.searchresult-nomatch {
+  border-radius: 3px;
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+  margin-top: 20px; padding:0.2em 0.5em;
+  text-align:center;
+}
 
 }
+
+/* style for print */ 
 
 @media print {
 
@@ -542,11 +667,15 @@ body {
   line-height: 1.3; 
   padding: 10px;
 }
-#header, #footer, #sidebar {
+#menu, #footer, #sidebar {
   display: none;
 }
 #content {
   width: 100%; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-decoration: underline;
 }
 
 h1 {
@@ -568,6 +697,12 @@ h4, h5 {
 
 p {
   margin: 0 0 5px;
+}
+
+p.annotation {
+  clear: both;
+  font-size: 0.75em;
+  margin-bottom: 20px;
 }
 
 img {
