@@ -282,6 +282,12 @@ img.right {
   margin: 0;
 }
 
+#sidebar li ul li.level-0:hover, #sidebar li ul li.selected {
+  background-image: url(bullet_triangle_toggled.png);
+  background-repeat: no-repeat;
+  background-position: 4px 7px;
+}
+
 #sidebar li ul li.level-1 {
   background-image: url(bullet_triangle_green.png);
   background-repeat: no-repeat;
@@ -441,14 +447,14 @@ input, textarea, select {
   font-size: 13px;
 }
 
-input[type="text"], textarea {
+input[type="text"], textarea, input[type="password"] {
   border: 1px solid #777;
   border-radius: 5px;
   font-family: Arial, Helvetica, sans-serif;
   padding: 2px;
   margin: 0.1em 0;
 }
-input:focus, input:hover {
+input[type="text"]:hover, textarea:hover, input[type="password"]:hover {
   border: 1px solid #000
 }
 
@@ -478,8 +484,16 @@ div.form {
   width: 30em;
   margin: 1em 0;
   padding: 0.2em 0.5em 0.3em;
-  border: 1px solid #808080;
+  border: 1px solid #CCC;
+  box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
 }
+
+div.login-form div.form-label label {
+  font-size: 0.9em;
+}
+
 /* for a stacked form remove floats and heights */
 div.form-title {
   height: 1.6em;

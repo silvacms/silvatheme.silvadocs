@@ -34,7 +34,6 @@
     <div id="sidebar">
       <ul>
         <li id="search" tal:condition="provider.search_url">
-          <h3>Search</h3>
           <form method="get" action="search"
                 tal:attributes="action provider.search_url">
             <fieldset>
@@ -51,6 +50,7 @@
     </div>
     <!-- end sidebar -->
     <div style="clear: both;">&nbsp;</div>
+    <div class="push"></div>
   </div>
   <!-- end page -->
   <!-- start footer -->
