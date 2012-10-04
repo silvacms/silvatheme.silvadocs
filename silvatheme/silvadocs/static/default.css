@@ -166,7 +166,7 @@ img.right {
 
 #site {
   background-color: #FCFCFC;
-  background-image: url("site-bg.png");
+  background-image: url(site_bg.png);
   background-position: top left;
   background-repeat: repeat-x;
   height: auto !important;
