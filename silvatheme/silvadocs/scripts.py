@@ -39,3 +39,19 @@ class FixPASCommand(object):
                 logger.info('member service created.')
         else:
             logger.info('member service already present. nothing do to.')
+
+
+from five import grok
+from silva.core.views import views as silvaviews
+from silva.core.interfaces import IRoot
+
+class Run(silvaviews.View):
+    grok.name('update_service_member')
+    grok.require('zope2.ViewManagementScreens')
+    grok.context(IRoot)
+
+    def update(self):
+        FixPASCommand().run(self.context, None)
+
+    def render(self):
+        return '<p>updated.</p>'
