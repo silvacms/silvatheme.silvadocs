@@ -1,6 +1,6 @@
 
 from silva.system.utils.script import NEED_SILVA_SESSION
-from silva.core.services.interfaces import IMemberService
+from silva.pas.base.interfaces import IPASService
 
 from Products.Silva.ExtensionRegistry import extensionRegistry
 
@@ -24,7 +24,7 @@ class FixPASCommand(object):
         parser.set_defaults(plugin=self)
 
     def run(self, root, options):
-        if not IMemberService.providedBy(root.service_members):
+        if not IPASService.providedBy(root.service_members):
             root.manage_delObjects(['service_members'])
             if extensionRegistry.get_extension('silva.pas.base') is not None:
                 from silva.pas.base.subscribers import configure_service
@@ -34,9 +34,7 @@ class FixPASCommand(object):
                 configure_service(root, None)
                 logger.info('member service updated.')
             else:
-                factory = root.manage_addProduct['Silva']
-                factory.manage_addSimpleMemberService()
-                logger.info('member service created.')
+                logger.error('silva.pas.base not installed.')
         else:
             logger.info('member service already present. nothing do to.')
 
