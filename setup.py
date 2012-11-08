@@ -31,4 +31,8 @@ setup(name='silvatheme.silvadocs',
           'silva.core.layout',
           'zope.cachedescriptors',
           ],
+      entry_points = """
+      [silva.system.utils]
+      fix_pas = silvatheme.silvadocs.scripts:FixPASCommand
+      """,
       )
