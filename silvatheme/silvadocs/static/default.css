@@ -783,22 +783,11 @@ a:after {
   /* make linkst stand out */
 
   a:link, a:visited {
-	color: #520;
+	color: #06C;
 	background: transparent;
 	font-weight: bold;
 	text-decoration: underline;
   }
-
-  /* display links */
-
-#content a:link:after, #content a:visited:after {
-   content: " (" attr(href) ") ";
-   font-size: 90%;
-   }
-
-#content a[href^="/"]:after {
-   content: " (http://www.silvacms.org/documentation/" attr(href) ") ";
-   }
 
   /* set fonts */
 
@@ -819,6 +808,7 @@ a:after {
   }
 
 }
+/* end print styling */
 
 
 
