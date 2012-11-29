@@ -507,7 +507,7 @@ div.form {
   padding: 0.2em 0.5em 0.3em;
   border: 1px solid #CCC;
   box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
 }
 
@@ -736,8 +736,9 @@ p {
 
 p.annotation {
   clear: both;
-  font-size: 0.75em;
+  font-size: 85%;
   margin-bottom: 20px;
+  font-style: italic;
 }
 
 img {
