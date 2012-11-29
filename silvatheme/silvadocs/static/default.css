@@ -39,7 +39,7 @@ h2 {
 
 h3, h4, h5, h6 {
   border-bottom: 1px solid #1A8922;
-  /* wim display: inline-block; */
+  display: inline-block;
   font-size: 1.1em;
 }
 
@@ -49,6 +49,8 @@ h5 {
 
 h6 {
   font-size: 0.9em;
+  display: block;
+  border: none;
 }
 
 ul, ol, p, td, dd, dt {
