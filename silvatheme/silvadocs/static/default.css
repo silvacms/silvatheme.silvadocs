@@ -780,19 +780,25 @@ a:after {
   background: transparent;
   }
 
-  /* display image links */
-
-  a:link:after {
-    content: " (" attr(href) ") ";
-  }
-
   /* make linkst stand out */
 
-  a:link {
-    font-weight: bold;
-    text-decoration: underline;
-    color: #06c;
+  a:link, a:visited {
+	color: #520;
+	background: transparent;
+	font-weight: bold;
+	text-decoration: underline;
   }
+
+  /* display links */
+
+#content a:link:after, #content a:visited:after {
+   content: " (" attr(href) ") ";
+   font-size: 90%;
+   }
+
+#content a[href^="/"]:after {
+   content: " (http://www.silvacms.org/documentation/" attr(href) ") ";
+   }
 
   /* set fonts */
 
