@@ -759,7 +759,7 @@ a:after {
 @media print {
 
   /* hide non interesting items for printing */
-  #header, #sidebar, #footer {
+  #header, #sidebar, #footer, #legal {
     display: none;
   }
 
@@ -774,7 +774,7 @@ a:after {
 
   body {
     background: white;
-}
+  }
 
   #content, #site {
   background: transparent;
@@ -783,7 +783,7 @@ a:after {
   /* make linkst stand out */
 
   a:link, a:visited {
-	color: #06C;
+	color: #06C !important;
 	background: transparent;
 	font-weight: bold;
 	text-decoration: underline;
@@ -793,7 +793,7 @@ a:after {
 
   body {
     font-family: Georgia, 'Times New Roman', serif;
-}
+  }
 
   /* set font size */
 
