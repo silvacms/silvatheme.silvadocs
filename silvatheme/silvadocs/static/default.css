@@ -754,6 +754,64 @@ a:after {
   font-size: 10pt;
 }
 
+/* print styling */
+
+@media print {
+
+  /* hide non interesting items for printing */
+  #header, #sidebar, #footer {
+    display: none;
+  }
+
+  /* max content area */
+  #content {
+    width: 100%;
+    margin: 0;
+    float: none;
+  }
+
+  /* reset backgrounds */
+
+  body {
+    background: white;
+}
+
+  #content, #site {
+  background: transparent;
+  }
+
+  /* display image links */
+
+  a:link:after {
+    content: " (" attr(href) ") ";
+  }
+
+  /* make linkst stand out */
+
+  a:link {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #06c;
+  }
+
+  /* set fonts */
+
+  body {
+    font-family: Georgia, ‘Times New Roman’, serif;
+}
+
+  /* set font size */
+
+  p {
+    font-size: 12pt;
+  }
+
+  /* align */
+
+  #page {
+    margin: 0;
+  }
+
 }
 
 
