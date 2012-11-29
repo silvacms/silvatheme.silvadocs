@@ -66,16 +66,16 @@ pre {
 ::-moz-selection {background: #777; color:#FFF;}
 
 a:link {
-  color: #FF9900;
+  color: #FF6600;
 }
 
 a:visited {
-  color: #FF9900;
+  color: #FF6600;
 }
 
 a:hover, a:active {
   text-decoration: underline;
-  color: #FF6600;
+  color: #FF3300;
 }
 
 img {
@@ -174,11 +174,11 @@ img.right {
   padding: 7px;
   text-decoration: underline;
   font-size: 13px;
-  color: #FF9900;
+  color: #FF6600;
 }
 
 #menu a:hover {
-  color: #FF6600;
+  color: #FF3300;
   text-decoration: underline;
 }
 
