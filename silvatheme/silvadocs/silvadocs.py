@@ -18,7 +18,6 @@ class ISilvaDocs(IPorto):
     silvaconf.resource('modernizr-1.7.min.js')
     silvaconf.resource('typography.css')
     silvaconf.resource('default.css')
-    silvaconf.resource('print.css')
 
 
 class ISilvaDocsSkin(ISilvaDocs, ISilvaSkin):
