@@ -57,6 +57,11 @@ p {
   text-align: justify;
 }
 
+pre {
+  font-size: 85%;
+  overflow: hidden;
+}
+
 ::-selection {background: #777; color:#FFF;}
 ::-moz-selection {background: #777; color:#FFF;}
 
@@ -75,12 +80,7 @@ a:hover, a:active {
 
 img {
   border: none;
-  /* wim max-width: 100%;*/
 }
-
-/* wim div.image {
-  width: 100%;
-}*/
 
 img.left {
   float: left;
@@ -91,6 +91,16 @@ img.right {
   float: right;
   margin-left: 15px;
 }
+
+#content img {
+  -moz-box-shadow: 3px 3px 4px #aaa;
+  -webkit-box-shadow: 3px 3px 4px #aaa;
+  box-shadow: 3px 3px 4px #aaa;
+  /* For IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#aaaaaa')";
+  /* For IE 5.5 - 7 */
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#aaaaaa');
+  }
 
 /* Header */
 
