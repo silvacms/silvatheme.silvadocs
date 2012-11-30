@@ -195,7 +195,7 @@ img.right {
 
 #site {
   background-color: #FCFCFC;
-  background-image: url(site_bg.png);
+  background-image: url(images/site_bg.png);
   background-position: top left;
   background-repeat: repeat-x;
   height: auto !important;
@@ -304,7 +304,7 @@ img.right {
 }
 
 #sidebar li ul li.level-0 {
-  background-image: url(bullet_triangle_green.png);
+  background-image: url(images/bullet_triangle_green.png);
   background-repeat: no-repeat;
   background-position: 7px 7px;
   padding: 5px 6px 5px 25px;
@@ -312,13 +312,13 @@ img.right {
 }
 
 #sidebar li ul li.level-0:hover, #sidebar li ul li.selected {
-  background-image: url(bullet_triangle_toggled.png);
+  background-image: url(images/bullet_triangle_toggled.png);
   background-repeat: no-repeat;
   background-position: 4px 7px;
 }
 
 #sidebar li ul li.level-1 {
-  background-image: url(bullet_triangle_green.png);
+  background-image: url(images/bullet_triangle_green.png);
   background-repeat: no-repeat;
   background-position: 1px 7px;
   font-size: 1.05em;
