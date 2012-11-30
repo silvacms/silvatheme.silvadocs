@@ -223,7 +223,8 @@ img.right {
 }
 
 #content ul {
-  list-style: disc inside;
+  list-style: disc;
+  margin-left: 1em;
 }
 
 /* Content */
