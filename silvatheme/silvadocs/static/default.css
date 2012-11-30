@@ -37,7 +37,7 @@ h2 {
   font-size: 1.5em;
 }
 
-h3, h4, h5, h6 {
+h3 {
   border-bottom: 1px solid #1A8922;
   display: inline-block;
   font-size: 1.1em;
@@ -46,10 +46,14 @@ h3, h4, h5, h6 {
 h4 {
   display: block;
   border: none;
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
 h5 {
+  display: block;
   font-size: 1em;
+  border: none;
 }
 
 h6 {
