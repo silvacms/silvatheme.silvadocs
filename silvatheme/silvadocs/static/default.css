@@ -57,9 +57,13 @@ ul, ol, p, td, dd, dt {
   font-size: 0.85em;
 }
 
-ul, ol {
+ul {
   margin: 0 0 0.5em;
   list-style: none;
+}
+
+ol {
+  margin: 0 0 0.5em 2em;
 }
 
 p {
@@ -76,16 +80,25 @@ pre {
 
 a:link {
   color: #FF6600;
+  text-decoration: none;
+  border-bottom: 1px solid #FF6600;
 }
 
 a:visited {
   color: #FF6600;
+  text-decoration: none;
+  border-bottom: 1px solid #FF6600;
 }
 
 a:hover, a:active {
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 1px solid #FF3300;
   color: #FF3300;
 }
+
+h3 a, h4 a, h5 a, h6 a {
+    border: none;
+  }
 
 img {
   border: none;
@@ -111,7 +124,7 @@ img.right {
   filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#aaaaaa');
   }
 
-#content .align-left img {
+#content .float-left img {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -282,6 +295,7 @@ img.right {
   float: right;
   padding: 15px;
   width: 23%;
+  background: #fff;
 }
 #sidebar input[type="text"] {
   width: 67%;
@@ -737,6 +751,7 @@ div.searchresult {
 
   img {
   max-width: 100%;
+  border: 1px solid #ddd;
   }
 
   /* hide non interesting items for printing */
