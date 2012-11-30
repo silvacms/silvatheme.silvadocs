@@ -111,7 +111,7 @@ img.right {
   filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#aaaaaa');
   }
 
-#content .left img {
+#content .align-left img {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
