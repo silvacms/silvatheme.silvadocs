@@ -80,24 +80,18 @@ pre {
 
 a:link {
   color: #FF6600;
-  text-decoration: none;
-  border-bottom: 1px solid #FF6600;
 }
 
 a:visited {
   color: #FF6600;
-  text-decoration: none;
-  border-bottom: 1px solid #FF6600;
 }
 
 a:hover, a:active {
   text-decoration: none;
-  border-bottom: 1px solid #FF3300;
-  color: #FF3300;
 }
 
 h3 a, h4 a, h5 a, h6 a {
-    border: none;
+    text-decoration: none;
   }
 
 img {
