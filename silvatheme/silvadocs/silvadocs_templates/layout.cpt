@@ -1,20 +1,10 @@
 <div id="site">
   <div id="header">
     <div id="logo">
-      <h1><a href="#"
-             tal:attributes="href provider.publication_url"
-             tal:content="provider.publication_title">Silva</a></h1>
-    </div>
-    <div id="menu">
-      <ul>
-        <li tal:repeat="publication provider.top_menu_items()"
-            tal:attributes="class provider.current_publication_class(publication)">
-          <a tal:attributes="href path:publication/@@absolute_url"
-             tal:content="publication.get_title()">
-            publication title goes here
-          </a>
-        </li>
-      </ul>
+      <h1>
+        <a href="#"
+           tal:attributes="href context.get_root_url">Back to documentation home</a>
+      </h1>
     </div>
   </div>
   <!-- end header -->
@@ -58,7 +48,7 @@
     <div class="wrap" tal:replace="structure provider:footer">
     </div>
     <div id="legal">
-      &copy; 2009-2012 <a href="http://infrae.com">Infrae</a>,
+      &copy; 2009-2013 <a href="http://infrae.com">Infrae</a>,
       Design by <a href="http://www.nodethirtythree.com/">NodeThirtyThree</a>
       and <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.
     </div>
