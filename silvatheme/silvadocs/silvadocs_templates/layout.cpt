@@ -3,7 +3,7 @@
     <div id="logo">
       <h1>
         <a href="#"
-           tal:attributes="href context.get_root_url">Back to documentation home</a>
+           tal:attributes="href layout.get_root_url">Back to documentation home</a>
       </h1>
     </div>
   </div>
