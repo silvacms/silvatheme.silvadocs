@@ -426,6 +426,7 @@ p.annotation {
   clear: both;
   font-size: 0.75em;
   margin-bottom: 20px;
+  padding-top: 0.5em;
   font-style: italic;
 }
 
