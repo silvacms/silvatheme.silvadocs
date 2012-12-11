@@ -1,7 +1,10 @@
+# -*- coding: utf-8 -*-
+# Copyright (c) 2012  Infrae. All rights reserved.
+# See also LICENSE.txt
 from setuptools import setup, find_packages
 import os
 
-version = '1.0dev'
+version = '1.0'
 
 setup(name='silvatheme.silvadocs',
       version=version,
@@ -30,9 +33,6 @@ setup(name='silvatheme.silvadocs',
           'silva.core.interfaces',
           'silva.core.layout',
           'zope.cachedescriptors',
+          'zope.traversing',
           ],
-      entry_points = """
-      [silva.system.utils]
-      fix_pas = silvatheme.silvadocs.scripts:FixPASCommand
-      """,
       )
