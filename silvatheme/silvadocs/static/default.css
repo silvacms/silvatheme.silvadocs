@@ -140,18 +140,16 @@ img.right {
   height: 30px;
   margin: 0 auto;
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 
-#logo {
-  float: left;
-}
-
-#logo h1 {
-  border-style: solid;
-  border-width: 0 0 2px 0;
-  border-color: #1A8922;
-  margin-left: 20px;
+#logo li a {
+  background-image: url(images/backup.png);
+  background-repeat: no-repeat; 
+  background-position: 1px 1px;
+  color: #494949;
+  text-decoration: underline;
+  padding-left: 20px;
 }
 
 #logo h1 sup {
@@ -159,18 +157,10 @@ img.right {
   font-size: 24px;
 }
 
-#logo h1 a {
-  color: #494949;
-}
-
 #logo h2 {
   margin-top: -10px;
   font-size: 12px;
   color: #A0A0A0;
-}
-
-#logo a {
-  text-decoration: none;
 }
 
 /* Menu */

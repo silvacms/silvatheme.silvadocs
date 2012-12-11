@@ -1,13 +1,15 @@
 <div id="site">
   <div id="header">
     <div id="logo">
-      <h1>
+      <ul>
+        <li>
         <a href="#"
            tal:attributes="href provider.publication_url"
            tal:content="provider.publication_title">
           Silva Documentation
         </a>
-      </h1>
+        </li>
+      </ul>
     </div>
   </div>
   <!-- end header -->
