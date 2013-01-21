@@ -51,6 +51,10 @@ class Layout(porto.Layout):
             return absoluteURL(search.get_silva_object(), self.request)
         return None
 
+    @Lazy
+    def silva_root(self):
+        return self.context.get_root()
+
 
 class Favicon(porto.Favicon):
     """Declare that we have a favicon for this layer.
@@ -62,3 +66,5 @@ class Favicon(porto.Favicon):
     or method for this class.
     """
     pass
+
+
