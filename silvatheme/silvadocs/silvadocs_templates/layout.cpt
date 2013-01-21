@@ -2,8 +2,8 @@
   <div id="header">
     <span class="root-link">
       <a href="#"
-         tal:attributes="href provider.silva_root">
-        Go back to full site
+         tal:attributes="href context.get_publication().aq_parent.@@absolute_url">
+        Go back
       </a>
     </span>
     <div id="logo">
