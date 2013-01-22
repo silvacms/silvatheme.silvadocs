@@ -1,9 +1,9 @@
 <div id="site">
   <div id="header">
-    <span class="root-link">
+    <span class="exit-link">
       <a href="#"
          tal:attributes="href context.get_publication().aq_parent.@@absolute_url">
-        Go back
+        Exit the documentation
       </a>
     </span>
     <div id="logo">
