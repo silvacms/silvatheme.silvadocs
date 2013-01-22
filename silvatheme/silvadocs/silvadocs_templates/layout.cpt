@@ -2,7 +2,8 @@
   <div id="header">
     <span class="exit-link">
       <a href="#"
-         tal:attributes="href path:context/get_publication/aq_parent/@@absolute_url">
+         tal:define="parent_publication context.get_publication().aq_parent"
+         tal:attributes="href path:parent_publication/@@absolute_url">
         Exit the documentation
       </a>
     </span>
