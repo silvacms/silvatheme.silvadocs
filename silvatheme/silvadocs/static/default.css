@@ -143,9 +143,9 @@ img.right {
   padding-bottom: 30px;
 }
 
-#logo li a {
+.exit-link a {
   background-image: url(images/backup.png);
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   background-position: 1px 1px;
   color: #494949;
   text-decoration: underline;
