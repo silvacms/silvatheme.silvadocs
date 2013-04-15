@@ -7,17 +7,6 @@
         Exit the documentation
       </a>
     </span>
-    <div id="logo">
-      <ul>
-        <li>
-        <a href="#"
-           tal:attributes="href provider.publication_url"
-           tal:content="provider.publication_title">
-          Silva Documentation
-        </a>
-        </li>
-      </ul>
-    </div>
   </div>
   <!-- end header -->
   <!-- start page -->
