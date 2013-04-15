@@ -150,9 +150,10 @@ span.exit-link {
 .exit-link a {
   background-image: url(images/upalevel.png);
   background-repeat: no-repeat;
-  background-position: 1px 1px;
+  background-position: 1px 0px;
   color: #494949;
-  text-decoration: underline;
+  text-decoration: none;
+  padding-top: 2px;
   padding-left: 20px;
 }
 
@@ -388,7 +389,7 @@ span.exit-link {
 /* Boxes */
 
 .box1 {
-  padding: 4px 20px 20px;
+  padding: 5px 20px 20px;
 }
 
 .box2 {
