@@ -518,7 +518,7 @@ label {
 /* Login form */
 
 div.form {
-  width: 30em;
+  width: 25em;
   margin: 1em 0;
   padding: 0.2em 0.5em 0.3em;
   border: 1px solid #CCC;
@@ -537,8 +537,6 @@ div.form-title {
   font-size: 15px;
   font-weight: bold;
 }
-/* element borders */
-
 div.form-label {
   float: left;
   width: 7em;
@@ -568,6 +566,16 @@ div.form-actions input.submit {
 }
 div.form-actions input.cancel {
   padding: 0.1em 1.5em;
+}
+
+input[type="button"].cancel { /* for silvadocs */
+  background: white;
+  border: 1px solid rgba(32,32,32, 0.5);
+  border-radius: 8px;
+  color: inherit;
+}
+input[type="button"].cancel:hover { /* for silvadocs */
+  background-color: #aaa;
 }
 
 /* style for news items properties form, i.e. the newsitemtemplate
