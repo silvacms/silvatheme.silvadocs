@@ -139,8 +139,12 @@ img.right {
   width: 74%;
   height: 30px;
   margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+}
+
+span.exit-link {
+  font-size: 80%;
+  padding-left: 0.2em;
 }
 
 .exit-link a {
@@ -150,11 +154,6 @@ img.right {
   color: #494949;
   text-decoration: underline;
   padding-left: 20px;
-}
-
-#logo h1 sup {
-  vertical-align: text-top;
-  font-size: 24px;
 }
 
 #logo h2 {
@@ -335,7 +334,7 @@ img.right {
   border: 1px solid rgba(0,0,0,0.3);
 }
 
-#sidebar li ul li a {
+#sidebar ul li h2 a, #sidebar li ul li a {
   color: #333;
   text-decoration: none;
 }
@@ -389,7 +388,7 @@ img.right {
 /* Boxes */
 
 .box1 {
-  padding: 20px;
+  padding: 4px 20px 20px;
 }
 
 .box2 {

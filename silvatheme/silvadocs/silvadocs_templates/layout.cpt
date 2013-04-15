@@ -45,7 +45,13 @@
           </form>
         </li>
         <li>
-          <h2 tal:content="provider.publication_title"></h2>
+          <h2>
+            <a href="#"
+               tal:attributes="href provider.publication_url"
+               tal:content="provider.publication_title">
+              Silva Documentation *.*
+            </a>
+          </h2>
           <tal:block tal:replace="structure provider:navigation" />
         </li>
       </ul>
