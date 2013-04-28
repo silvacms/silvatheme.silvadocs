@@ -594,46 +594,38 @@ input[type="button"].cancel:hover { /* for silvadocs */
 
 /* Style is reflection */
 
-/* stylesheet for silva find search and searchresult pages */
-
+/* stylesheet for SilvaFind search and searchresult pages - DO NOT EDIT
+   This should match search.css in SilvaFind - override below the block */
 .searchform input, .searchform select, .searchform textarea {
   width: 94%;
 }
-
 *:first-child+html .searchform input, *:first-child+html .searchform select, *:first-child+html .searchform textarea {
   width: 99%; /* IE7 hack */
 }
-
 div.searchform input.searchform-submit {
   width:auto;
 }
-
 .searchform-title {
   width: 20%;
   padding-top:0.25em;
   padding-right:0.3em;
 }
-
 .searchform-title:after {
   content:':';
 }
-
 .searchform-description {
   width: 35%;
   padding-top:0.25em;
   padding-left:0.5em;
 }
-
 .searchresult-header {
   margin: 0.5em 0;
   padding:0 0.3em;
   border:1px solid #898a8b;
 }
-
 .searchresult-header span {
   font-size:11px;
 }
-
 div.searchresult-header a:link {
   text-decoration:none;
 }
@@ -643,25 +635,20 @@ div.searchresult-header a:visited {
 div.searchresult-header a:hover {
   text-decoration:underline;
 }
-
 body div#content div.searchresults ul li {
   list-style-type:none;
   margin:0.5em 0.5em 1.5em 0;
 }
-
 div.searchresult {
   margin-top:1em;
 }
-
 .searchresult-ranking {
   float:right;
   font-size:0.95em;
 }
-
 .searchresults .batchNav a {
   font-size: 85%;
 }
-
 .searchresult-link {
   font-weight:bold;
 }
@@ -689,22 +676,18 @@ div.searchresult {
 .searchresult-snippet{
   margin-left:2em;
 }
-
 .searchresult-notallowed {
   color:red;
 }
-
 .searchresult-thumbnail {
   margin-left:2em;
   padding-top:0.25em;
   padding-bottom:0.25em;
 }
-
 .searchresult-breadcrumb {
    margin-left:2em;
    display:block;
 }
-
 .searchresult-nomatch {
   border-radius: 3px;
     box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
@@ -713,7 +696,12 @@ div.searchresult {
   text-align:center;
   }
 
-}/* end of screen */
+}
+/* end SilvaFind search selectors, override below */
+
+
+
+/* end of screen selectors */
 
 /* style for print */
 
