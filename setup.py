@@ -4,7 +4,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.0.2'
+version = '1.1dev'
 
 setup(name='silvatheme.silvadocs',
       version=version,
