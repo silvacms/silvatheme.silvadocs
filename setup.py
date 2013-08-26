@@ -4,7 +4,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.1dev'
+version = '1.0.2'
 
 setup(name='silvatheme.silvadocs',
       version=version,
@@ -18,7 +18,7 @@ setup(name='silvatheme.silvadocs',
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
       keywords='silvatheme silvadocs',
-      author='Infrae - Design by NodeThirtyThree',
+      author='Infrae',
       author_email='info@infrae.com',
       url='http://infrae.com/products/silva',
       license='BSD and Creative Commons',
