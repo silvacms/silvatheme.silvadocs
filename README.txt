@@ -9,8 +9,8 @@ used by default on the `Silva User Documentation`_.
 Code repository
 ===============
 
-The code for this extension can be found in Mercurial:
-https://hg.infrae.com/silvatheme.silvadocs
+The code for this extension can be found in Git:
+https://github.com/silvacms/silvatheme.silvadocs
 
 
 .. _Silva: http://silvacms.org
